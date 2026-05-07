@@ -1,0 +1,333 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+header{
+    background-color: #ff6b35;
+    box-shadow: 0 2px 5px rgba(0, 0,0, 0.1);
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.logo h1{
+    color: white;
+    font-size: 29px;
+}
+.nav-links{
+    display: flex;
+    list-style: none;
+    gap: 32px;
+}
+.nav-links a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+.nav-links a:hover{
+    color: rgb(33,2,7);
+}
+.hero{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+    url("https://images.unsplash.com/photo-1477617722074-45613a51bf6d?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")center/cover;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+.hero-content p{
+    font-size: 24px;
+    margin-bottom: 32px;
+}
+.hero-content h2{
+    font-size: 48px;
+    margin-bottom: 16px;
+}
+.cta-button{
+    background-color: #ff6b35;
+    padding: 16px 32px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: white;
+}
+.cta-button:hover{
+    background-color: #902c08;
+}
+.menu-section{
+    padding: 64px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.section-title{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 48px;
+    color: #ff6b35;
+}
+.menu-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 32px;
+}
+.menu-card {
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+.menu-card:hover{
+    transform: translateY(-20px);
+    background-color: #f7d4b8;
+}
+.menu-card img{
+    width: 100%;
+    height: 200PX;
+    object-fit: cover;
+}
+.card-content{
+    padding: 24px;
+    text-align: center;
+}
+.card-content h3{
+    color: #6b2810;
+    margin-bottom: 8px;
+    font-size: 24px;
+}
+.card-content p{
+    color: #666;
+    margin-bottom: 16px;
+    font-size: 16px;
+}
+.price{
+    display: block;
+    font-size: 25px;
+    font-weight: bold;
+    color: #902c08;
+    margin-bottom: 16px;
+}
+.order-btn{
+    width: 100%;
+    padding: 12px;
+    background-color: #ff6b35;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+.order-btn:hover{
+    background-color: #ff6b35;
+    padding: 14px 5%;
+}
+.promo-section{
+    background-color: #eed0c5;
+    padding: 64px 5%;
+}
+.section-title h2{
+    text-align: center;
+    margin-bottom: 48px;
+    font-size: 48px;
+    color:#6b2810;
+
+}
+.promo-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 32px
+}
+.promo-card{
+    background-color: white;
+    padding: 32px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 25px rgba(18,1,1,0.1);
+}
+.promo-card h3{
+    margin-bottom: 16px;
+    color: #ff6b35;
+    font-size: 28px;
+}
+.promo-price{
+    display: block;
+    font-size: 32px;
+    font-weight: bold;
+    color: #da6132;
+    margin-top: 16px;
+}
+.promo-card p{
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+footer{
+    background-color: rgb(185, 105, 105);
+    color: white;
+    padding: 48px 5%;
+    text-align: center; 
+}
+.footer-content{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    gap: 32px;
+    margin-bottom: 32px;
+}
+.footer-section h3{
+    color: #6b2810;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.footer-section{
+    margin-bottom: 12px;
+    text-align: end;
+    
+}
+.footer-bottom{
+    text-align: center;
+    padding-top: 32px;
+    border-top: 1px saddlebrown;
+
+}
+.footer-section p{
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.cart-count {
+    position: relative;
+    top: -28px;
+    right: -12px;
+    background-color: white; /* Círculo blanco para resaltar */
+    color: #ff6b35; /* Texto del contador en naranja */
+    font-size: 0.70rem;
+    font-weight: bold;
+    min-width: 10px;
+    height: 20  px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 55%; /* Que sea circular */
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+}
+
+.toast {
+    visibility: hidden;
+    min-width: 250px;
+    background-color: #ff6b35;
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+    padding: 16px;
+    position: fixed;
+    z-index: 2000;
+    top: 80px;
+    right: 5px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: visibility 0s, opacity 0.5s ease, transform 0.5s ease;
+}
+
+.toast.show {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/*responsive*/
+/*pantallas menores a 768px*/
+
+@media (max-width: 768px){
+    .nav-links{
+        gap: 1rem;
+        font-size: 0.9rem;
+    }
+    .nav-contect h2{
+        font-size: 2rem;
+    }
+    .hero-contect p{
+        font-size: 2rem;
+    }
+}
+/*pantallas menores a 992px*/
+@media (max-width: 992px){
+    .navbar{
+        padding: 1rem 3%;
+    }
+    .menu-grid,.promo-container{
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
+    }
+    .hero{
+        min-height: 350px;
+    }
+    .menu-section,.promo-section{
+        padding: 3rem 3%;
+    }
+
+}
+@media (max-width: 768px){
+    .navbar{
+        flex-direction: column;
+        padding: 1rem;
+        gap: 1rem;
+    }
+    .logo h1{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .nav-links{
+        justify-content: center;
+        gap: 1rem;
+        font-size: 0.9rem;
+    }
+    .hero{
+        min-height: 300px;
+        padding: 1.5rem;
+    }
+    .card-section,.promo-section{
+        padding: 1.25rem;
+    }
+    .menu-section,.promo-section{
+        padding: 2.5rem 4%;
+    }
+    footer{
+        padding: 2rem 4%;
+    }
+    .footer-contect{
+        gap: 1.5rem;
+    }
+
+
+}
+    
+   
+    
